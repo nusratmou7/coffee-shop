@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Shop</title>
+    <!-- font-awesome -->
+ <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+<header class="header" id="header">
+    <nav class="nav">
+        <div class="nav__center container">
+            <div class="logo">
+                <p>Coffee</p>
+            </div>
+            
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#header" class="nav__link scroll-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link scroll-link">New</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#all" class="nav__link scroll-link">All</a>
+                    </li>
+                </ul>
+
+            </div>
+               
+            <div class="l">
+                    <h3><i class="fa fa-shopping-cart"></i></h3></div>
+               
+
+               
+        </div>
+    </nav>
+
+<div class="hero">
+    <div class="hero__center container">
+        <div class="hero__left">
+         <h1>Fresh coffee</h1>
+         <p>freash your mind drink a coffee</p>
+         <a href="#" class="button hero__btn">Shop now</a>
+        </div>
+
+        <div class="hero__right">
+
+        </div>
+    </div>
+</div>
+</header>
+<!------- NAVBAR ENDDD---->
+
+<main>
+    <section class="section new" id="new">
+        <div class="new__center container">
+            <div class="title">
+                <h2> new products</h2>
+            </div>
+
+            <div class="product__center">
+                <div class="product">
+                    <div class="product__header">
+                        <img src="./images/product-1.jpeg" alt="">
+
+                    </div>
+
+                    <div class="product_footer">
+                        <h4>latte</h4>
+                        <h4 class="price">$60.00</h4>
+                    </div>
+                    <button class="n">Add cart</button>
+                    </div>
+
+
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/product-2.jpeg" alt="">
+    
+                        </div>
+    
+                        <div class="product_footer">
+                            <h4>latte</h4>
+                            <h5 class="price">$60.00</h5>
+
+                        </div>
+                        <button class="n">Add cart</button>
+                    </div>
+
+
+                        <div class="product">
+                            <div class="product__header">
+                                <img src="./images/product-3.jpeg" alt="">
+        
+                            </div>
+        
+                            <div class="product_footer">
+                                <h4>latte</h4>
+                                <h5 class="price">$60.00</h5>
+                            </div>
+                            <button class="n">Add cart</button>
+                       </div>
+
+                       
+                       <div class="product">
+                        <div class="product__header">
+                            <img src="./images/product-4.jpeg" alt="">
+    
+                        </div>
+    
+                        <div class="product_footer">
+                            <h4>latte</h4>
+                            <h5 class="price">$60.00</h5>
+                        </div>
+                        <button class="n">Add cart</button>
+                   </div>
+                       
+
+                 
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+<!------- NAVBAR ENDDD---->
+
+<div class="select">
+  
+            <img class=""style="height:100px;"src="./images/product-1.jpeg" alt="">
+            <h2>latte</h2>
+       
+         <ul class="">
+            <li class=" ">
+              <button class="page-link"onclick="decrease('textbox1','itemval1')" ><i class="fa fa-minus" aria-hidden="true"></i></button>
+            </li>
+            <li class="page-item"><input type='text' class="page-link" value='0' id='textbox1'></a></li>
+            <li class="page-item">
+                <button class="page-link" onclick="increase('textbox1','itemval1')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </li>
+            
+          </ul>
+         
+    
+            <P>$<span id="itemval1">0.00</span></P>
+       
+  
+            <div class=" justify-content-between">
+                <p>Product amount</p>
+                <p>#<span id="p_total">0.00</span></p>
+            </div>
+            <div class="  justify-content-between">
+                <p>Shipping Charge</p>
+                <p>$<span id="s_total">20.00</span></p>
+            </div>
+            <hr/>
+          
+                <p> the total amount(including vat)</p>
+                <p>$<span id="total_cart">0.00</span></p>
+         
+      
+</div>
+
+
+
+
+
+    <footer class="section" id="footer">
+        <p>
+            copyright
+            <span id="date"></span>. all rights reserved
+        </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
